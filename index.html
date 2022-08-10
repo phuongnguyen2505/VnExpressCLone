@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>VnExpress - Báo tiếng Việt nhiều người xem nhất</title>
+
+		<link rel="icon" type="image/png" href="logo-small.png" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+			integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<header class="section top-header">
+			<div class="container" onload="setTime()">
+				<h1>
+					<a href="https://vnexpress.net/" class="logo">
+						<img
+							src="https://s1.vnecdn.net/vnexpress/restruct/i/v632/v2_2019/pc/graphics/logo.svg"
+							alt="VnExpress - Bao tieng Viet nhieu nguoi xem nhat"
+						/>
+					</a>
+				</h1>
+				<span id="time-now" class="time-now"></span>
+				<div class="right">
+					<h2>
+						<a href="#" class="btn24h">
+							<span class="ic">
+								<i class="fa fa-clock"></i>
+							</span>
+							Mới nhất
+						</a>
+					</h2>
+					<a href="#" class="vne">
+						<span class="ic">
+							<img src="logo-small.png" class="ic" alt="" />
+						</span>
+						International
+					</a>
+					<form action="" class="search">
+						<input type="text" placeholder="Tìm kiếm" />
+						<button type="submit">
+							<span class="ic">
+								<i class="fa fa-search"></i>
+							</span>
+						</button>
+					</form>
+					<div class="login-btn">
+						<a href="" class="login-text">
+							<span class="ic ic-user">
+								<i class="fa fa-user"></i>
+							</span>
+							Đăng nhập
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="section nav-bar" id="nav-bar">
+			<nav class="main-nav">
+				<ul class="list-nav">
+					<li class="home" id="home">
+						<a href="" class="">
+							<span class="ic ic-home">
+								<i class="fa fa-home circle"></i>
+							</span>
+						</a>
+					</li>
+					<li class="newlest" id="newlest">
+						<a href="" class="">
+							<img src="logo-small-1.png" alt="" class="ic ic-vne" />
+							<span class=""> Mới nhất </span>
+						</a>
+					</li>
+					<li class="thoisu">
+						<a href="" class="">
+							<span class=""> Thời sự </span>
+						</a>
+						<ul class="sub">
+							<li>
+								<a href="#"> Chính trị </a>
+							</li>
+							<li>
+								<a href="#"> Dân sinh </a>
+							</li>
+							<li>
+								<a href="#"> Lao động - Việc làm </a>
+							</li>
+							<li>
+								<a href="#"> Giao thông </a>
+							</li>
+							<li>
+								<a href="#"> Mekong </a>
+							</li>
+							<li>
+								<a href="#"> Quỹ hy vọng </a>
+							</li>
+						</ul>
+					</li>
+					<li class="gocnhin">
+						<a href="" class="">
+							<span class=""> Góc nhìn </span>
+						</a>
+						<ul class="sub">
+							<li><a href="#">Góc nhìn</a></li>
+							<li><a href="#">Bình luận nhiều</a></li>
+							<li><a href="#">Chính trị & chính sách</a></li>
+							<li><a href="#">Y tế & sức khỏe</a></li>
+							<li><a href="#">Kinh doanh & quản trị</a></li>
+							<li><a href="#">Giáo dục & tri thức</a></li>
+							<li><a href="#">Môi trường</a></li>
+							<li><a href="#">Văn hóa & lối sống</a></li>
+							<li><a href="#">Covid 19</a></li>
+							<li><a href="#">Tác giả</a></li>
+						</ul>
+					</li>
+					<li class="thegioi">
+						<a href="" class="">
+							<span class=""> Thế giới </span>
+						</a>
+						<ul class="sub">
+							<li><a href="#">Video</a></li>
+							<li><a href="#">Thời sự</a></li>
+							<li><a href="#">Nhịp sống</a></li>
+							<li><a href="#">Food</a></li>
+							<li><a href="#">Tôi kể</a></li>
+							<li><a href="#">Chuyện núi rừng</a></li>
+							<li><a href="#">Pháp luật</a></li>
+							<li><a href="#">Giải trí</a></li>
+						</ul>
+					</li>
+					<li class="video">
+						<a href="" class="">
+							<span class=""> Video </span>
+						</a>
+						<ul class="sub">
+							<li><a href="#">Thời sự</a></li>
+							<li><a href="#">Nhịp sống</a></li>
+							<li><a href="#">Food</a></li>
+							<li><a href="#">Tôi kể</a></li>
+							<li><a href="#">Chuyện núi rừng</a></li>
+							<li><a href="#">Pháp luật</a></li>
+							<li><a href="#">Giải trí</a></li>
+						</ul>
+					</li>
+					<li class="podcats">
+						<a href="" class="">
+							<span class=""> Podcats </span>
+						</a>
+						<ul class="sub">
+							<li><a href="#">VnExpress hôm nay</a></li>
+							<li><a href="#">Họ nói gì?</a></li>
+							<li><a href="#">Hộp đen</a></li>
+							<li><a href="#">Ly hôn</a></li>
+							<li><a href="#">Thầm thì</a></li>
+							<li><a href="#">Bạn ổn không?</a></li>
+						</ul>
+					</li>
+					<li class="kinhdoanh">
+						<a href="" class="">
+							<span class=""> Kinh doanh </span>
+						</a>
+						<ul class="sub">
+							<li><a href="#">Quốc tế</a></li>
+							<li><a href="#">Doanh nghiệp</a></li>
+							<li><a href="#">Chứng khoán</a></li>
+							<li><a href="#">Bất động sản</a></li>
+							<li><a href="#">Ebank</a></li>
+						</ul>
+					</li>
+					<li class="khoahoc">
+						<a href="" class="">
+							<span class=""> Khoa học </span>
+						</a>
+					</li>
+					<li class="giaitri">
+						<a href="" class="">
+							<span class=""> Giải trí </span>
+						</a>
+					</li>
+					<li class="thể thao">
+						<a href="" class="">
+							<span class=""> Thể thao </span>
+						</a>
+					</li>
+					<li class="phapluat">
+						<a href="" class="">
+							<span class=""> Pháp luật </span>
+						</a>
+					</li>
+					<li class="giaoduc">
+						<a href="" class="">
+							<span class=""> Giáo dục </span>
+						</a>
+					</li>
+					<li class="suckhoe">
+						<a href="" class="">
+							<span class=""> Sức khỏe </span>
+						</a>
+					</li>
+					<li class="doisong">
+						<a href="" class="">
+							<span class=""> Đời sống </span>
+						</a>
+					</li>
+					<li class="dulich">
+						<a href="" class="">
+							<span class=""> Du lịch </span>
+						</a>
+					</li>
+					<li class="sohoa">
+						<a href="" class="">
+							<span class=""> Số hóa </span>
+						</a>
+					</li>
+					<li class="xe">
+						<a href="" class="">
+							<span class=""> Xe </span>
+						</a>
+					</li>
+					<li class="ykien">
+						<a href="" class="">
+							<span class=""> Ý kiến </span>
+						</a>
+					</li>
+					<li class="tamsu">
+						<a href="" class="">
+							<span class=""> Tâm sự </span>
+						</a>
+					</li>
+					<li class="cuoi">
+						<a href="" class="">
+							<span class=""> Hài </span>
+						</a>
+					</li>
+					<li class="all-menu has-transition">
+						<a href="#" onClick="return openNav()">
+							Tất cả
+							<span class="hamburger"></span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<section class="show-all-menu">
+				<div id="myNav" class="overlay">
+					<div class="header-menu">
+						<span class="name-header"> Tất cả chuyên mục </span>
+					</div>
+					<hr style="width: 92%; margin: auto" />
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<div class="content-left">
+						<div class="content-all-menu container">
+							<ul class="overlay-content collapsed">
+								<li><a href="#">Thời sự</a></li>
+								<li><a href="#">Chính trị</a></li>
+								<li><a href="#">Dân sinh</a></li>
+								<li><a href="#">Lao động - việc làm</a></li>
+								<li><a href="#">Giao thông</a></li>
+								<li><a href="#">Mekong</a></li>
+								<li><a href="#">Quỹ hy vọng</a></li>
+								<li class="list-toggle">
+									<span class="expand">Xem thêm</span>
+									<span class="collapse">Ẩn bớt</span>
+								</li>
+							</ul>
+							<ul class="overlay-content collapsed">
+								<li><a href="#">Góc nhìn</a></li>
+								<li><a href="#">Bình luận nhiều</a></li>
+								<li><a href="#">Chính trị & chính sách</a></li>
+								<li><a href="#">Y tế & sức khỏe</a></li>
+								<li><a href="#">Kinh doanh & quản trị</a></li>
+								<li><a href="#">Giáo dục & tri thức</a></li>
+								<li><a href="#">Môi trường</a></li>
+								<li><a href="#">Văn hóa & lối sống</a></li>
+								<li><a href="#">Covid 19</a></li>
+								<li><a href="#">Tác giả</a></li>
+								<li class="list-toggle">
+									<span class="expand">Xem thêm</span>
+									<span class="collapse">Ẩn bớt</span>
+								</li>
+							</ul>
+							<ul class="overlay-content collapsed">
+								<li><a href="#">Thế giới</a></li>
+								<li><a href="#">Tư liệu</a></li>
+								<li><a href="#">Phân tích</a></li>
+								<li><a href="#">Người Việt 5 châu</a></li>
+								<li><a href="#">Cuộc sống đó đây</a></li>
+								<li><a href="#">Quân sự</a></li>
+								<li class="list-toggle">
+									<span class="expand">Xem thêm</span>
+									<span class="collapse">Ẩn bớt</span>
+								</li>
+							</ul>
+							<ul class="overlay-content collapsed">
+								<li><a href="#">Video</a></li>
+								<li><a href="#">Thời sự</a></li>
+								<li><a href="#">Nhịp sống</a></li>
+								<li><a href="#">Food</a></li>
+								<li><a href="#">Tôi kể</a></li>
+								<li><a href="#">Chuyện núi rừng</a></li>
+								<li><a href="#">Pháp luật</a></li>
+								<li><a href="#">Giải trí</a></li>
+								<li class="list-toggle">
+									<span class="expand">Xem thêm</span>
+									<span class="collapse">Ẩn bớt</span>
+								</li>
+							</ul>
+							<ul class="overlay-content collapsed">
+								<li><a href="#">Podcats</a></li>
+								<li><a href="#">VnExpress hôm nay</a></li>
+								<li><a href="#">Họ nói gì?</a></li>
+								<li><a href="#">Hộp đen</a></li>
+								<li><a href="#">Ly hôn</a></li>
+								<li><a href="#">Thầm thì</a></li>
+								<li><a href="#">Bạn ổn không?</a></li>
+								<li class="list-toggle">
+									<span class="expand">Xem thêm</span>
+									<span class="collapse">Ẩn bớt</span>
+								</li>
+							</ul>
+							<ul class="overlay-content collapsed">
+								<li><a href="#">Kinh doanh</a></li>
+								<li><a href="#">Quốc tế</a></li>
+								<li><a href="#">Doanh nghiệp</a></li>
+								<li><a href="#">Chứng khoán</a></li>
+								<li><a href="#">Bất động sản</a></li>
+								<li><a href="#">Ebank</a></li>
+								<li class="list-toggle">
+									<span class="expand">Xem thêm</span>
+									<span class="collapse">Ẩn bớt</span>
+								</li>
+							</ul>
+						</div>
+						<div class="content-all-menu container">
+							<ul class="overlay-content collapsed">
+								<li><a href="#">Thời sự</a></li>
+								<li><a href="#">Chính trị</a></li>
+								<li><a href="#">Dân sinh</a></li>
+								<li><a href="#">Lao động - việc làm</a></li>
+								<li><a href="#">Giao thông</a></li>
+								<li><a href="#">Mekong</a></li>
+								<li><a href="#">Quỹ hy vọng</a></li>
+								<li class="list-toggle">
+									<span class="expand">Xem thêm</span>
+									<span class="collapse">Ẩn bớt</span>
+								</li>
+							</ul>
+							<ul class="overlay-content collapsed">
+								<li><a href="#">Góc nhìn</a></li>
+								<li><a href="#">Bình luận nhiều</a></li>
+								<li><a href="#">Chính trị & chính sách</a></li>
+								<li><a href="#">Y tế & sức khỏe</a></li>
+								<li><a href="#">Kinh doanh & quản trị</a></li>
+								<li><a href="#">Giáo dục & tri thức</a></li>
+								<li><a href="#">Môi trường</a></li>
+								<li><a href="#">Văn hóa & lối sống</a></li>
+								<li><a href="#">Covid 19</a></li>
+								<li><a href="#">Tác giả</a></li>
+								<li class="list-toggle">
+									<span class="expand">Xem thêm</span>
+									<span class="collapse">Ẩn bớt</span>
+								</li>
+							</ul>
+							<ul class="overlay-content collapsed">
+								<li><a href="#">Thế giới</a></li>
+								<li><a href="#">Tư liệu</a></li>
+								<li><a href="#">Phân tích</a></li>
+								<li><a href="#">Người Việt 5 châu</a></li>
+								<li><a href="#">Cuộc sống đó đây</a></li>
+								<li><a href="#">Quân sự</a></li>
+								<li class="list-toggle">
+									<span class="expand">Xem thêm</span>
+									<span class="collapse">Ẩn bớt</span>
+								</li>
+							</ul>
+							<ul class="overlay-content collapsed">
+								<li><a href="#">Video</a></li>
+								<li><a href="#">Thời sự</a></li>
+								<li><a href="#">Nhịp sống</a></li>
+								<li><a href="#">Food</a></li>
+								<li><a href="#">Tôi kể</a></li>
+								<li><a href="#">Chuyện núi rừng</a></li>
+								<li><a href="#">Pháp luật</a></li>
+								<li><a href="#">Giải trí</a></li>
+								<li class="list-toggle">
+									<span class="expand">Xem thêm</span>
+									<span class="collapse">Ẩn bớt</span>
+								</li>
+							</ul>
+							<ul class="overlay-content collapsed">
+								<li><a href="#">Podcats</a></li>
+								<li><a href="#">VnExpress hôm nay</a></li>
+								<li><a href="#">Họ nói gì?</a></li>
+								<li><a href="#">Hộp đen</a></li>
+								<li><a href="#">Ly hôn</a></li>
+								<li><a href="#">Thầm thì</a></li>
+								<li><a href="#">Bạn ổn không?</a></li>
+								<li class="list-toggle">
+									<span class="expand">Xem thêm</span>
+									<span class="collapse">Ẩn bớt</span>
+								</li>
+							</ul>
+							<ul class="overlay-content collapsed">
+								<li><a href="#">Kinh doanh</a></li>
+								<li><a href="#">Quốc tế</a></li>
+								<li><a href="#">Doanh nghiệp</a></li>
+								<li><a href="#">Chứng khoán</a></li>
+								<li><a href="#">Bất động sản</a></li>
+								<li><a href="#">Ebank</a></li>
+								<li class="list-toggle">
+									<span class="expand">Xem thêm</span>
+									<span class="collapse">Ẩn bớt</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="content-right">
+						<div class="container-right-content">
+							<ul class="type-new">
+								<li>Podcasts</li>
+								<li>Ảnh</li>
+								<li>Infographics</li>
+							</ul>
+							<ul class="type-new">
+								<li>Mới nhất</li>
+								<li>Xem nhiều</li>
+								<li>Tin nóng</li>
+							</ul>
+							<ul class="list-link">
+								<li>Rao vặt</li>
+								<li>Mua ảnh VnExpress</li>
+								<li>Vhome</li>
+								<li>eBox</li>
+								<li>eWork</li>
+								<li>Startup</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<section class="section section-top-news">
+			<div class="container flexbox">
+				<div class="col-top-news">
+					<div class="row-top-news">
+						<article class="item-news">
+							<div class="thumb-news">
+								<a href="#">
+									<img
+										src="https://i1-vnexpress.vnecdn.net/2022/08/09/crimea-9-8-reuters-1660059606-6819-2099-1660059931.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=AZGXuPQxuI6QGa8T1Uo6Rw"
+										alt="Hai phần ba dân số bị thu thập dữ liệu cá nhân trên mạng"
+									/>
+								</a>
+							</div>
+							<h2 class="title-news">
+								<a href="#"> Loạt vụ nổ ở sân bay Crimea </a>
+							</h2>
+							<p class="description">
+								Bộ Quốc phòng Nga cho biết kho bom đạn phát nổ ở sân bay tại bán đảo Crimea, gây loạt vụ nổ lớn nhưng
+								không có thương vong.
+							</p>
+							<p class="description" style="margin-top: 5px">
+								Bộ Quốc phòng Nga hôm nay cho biết một số bom, đạn dành cho chiến đấu cơ đã phát nổ ở sân bay Saki, gần
+								khu định cư Novofyodorovka trên bán đảo Crimea.
+							</p>
+							<p class="description" style="margin-top: 5px">
+								Cơ quan này thêm rằng họ đang tìm nguyên nhân vụ nổ, nhưng chỉ ra rằng sân bay này không phải là mục
+								tiêu của các cuộc tấn công...
+							</p>
+							<p class="meta-news">
+								<a href="#"> Thế giới </a>
+							</p>
+						</article>
+						<div class="sub-news-top">
+							<div class="inner-sub-news-top">
+								<div class="sub-featured">
+									<ul class="list-sub-feature">
+										<li>
+											<h3 class="title-news">Tối nay bão Mulan vào vịnh Bắc Bộ</h3>
+											<p class="description">
+												0h ngày 10/8, bão Mulan cách đảo Hải Nam (Trung Quốc) khoảng 150 km, sức gió mạnh nhất 74 km/h,
+												cấp 8, dự kiến vào vịnh Bắc Bộ đêm nay.
+											</p>
+										</li>
+										<li>
+											<h3 class="title-news">Cuộc đột kích chưa từng có tiền lệ của FBI vào dinh thự ông Trump</h3>
+											<p class="description">
+												Cuộc đột kích của FBI vào dinh thự ông Trump là động thái chưa từng có tiền lệ trong lịch sử Mỹ,
+												châm ngòi tranh cãi và tăng thêm chia rẽ đảng phái.
+											</p>
+										</li>
+										<li class="item-gocnhin">
+											<a href="" class="title-link">Góc nhìn</a>
+											<article class="item-news art-top">
+												<h3 class="title-news">
+													<a href=""> Tình dục đồng thuận </a>
+												</h3>
+												<p class="description">
+													Đồng thuận phải là căn cứ cốt lõi, xác định một hành vi có phải là tấn công tình dục hay
+													không.
+												</p>
+											</article>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="lazier"></div>
+		<footer class="footer container">
+			<div class="inner-footer width_common">
+				<ul class="list-menu-footer">
+					<li class="item-menu"><a href="#">Trang chủ</a></li>
+					<li class="item-menu"><a href=""></a></li>
+					<li class="item-menu"><a href=""></a></li>
+					<li class="item-menu"><a href=""></a></li>
+					<li class="item-menu"><a href=""></a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<a href="" id="to-top">
+			<span class="ic" style="margin-right: 0">
+				<i class="fa fa-arrow-up" style="font-size: 17px"></i>
+			</span>
+		</a>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<script>
+			$('.list-toggle').click(function () {
+				$(this).closest('ul').toggleClass('collapsed').toggleClass('expanded');
+			});
+		</script>
+
+		<script>
+			window.onscroll = function () {
+				console.log(window.pageYOffset);
+				var newlest = document.getElementById('newlest');
+				var home = document.getElementById('home');
+				var nav = document.getElementById('nav-bar');
+
+				if (window.pageYOffset > 50) {
+					newlest.classList.add('newlest-change');
+					newlest.classList.remove('newlest');
+
+					home.classList.add('home-change');
+					home.classList.remove('home');
+
+					nav.classList.add('sticky');
+				} else {
+					newlest.classList.add('newlest');
+					newlest.classList.remove('newlest-change');
+
+					home.classList.add('home');
+					home.classList.remove('home-change');
+
+					nav.classList.remove('sticky');
+				}
+			};
+		</script>
+
+		<script>
+			function openNav() {
+				document.getElementById('myNav').style.width = '100%';
+			}
+
+			function closeNav() {
+				document.getElementById('myNav').style.width = '0%';
+			}
+		</script>
+
+		<script>
+			const date = new Date();
+
+			document.getElementById('time-now').innerHTML = new Intl.DateTimeFormat('vi-Vi', { dateStyle: 'full' }).format(
+				date
+			);
+			//timeStyle: 'long'
+		</script>
+
+		<script>
+			var btn = $('#to-top');
+
+			$(window).scroll(function () {
+				if ($(window).scrollTop() > 300) {
+					btn.addClass('show');
+				} else {
+					btn.removeClass('show');
+				}
+			});
+
+			btn.on('click', function (e) {
+				e.preventDefault();
+				$('html, body').animate({ scrollTop: 0 }, '300');
+			});
+		</script>
+	</body>
+</html>
